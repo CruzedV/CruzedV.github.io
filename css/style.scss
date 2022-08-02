@@ -1,6 +1,5 @@
-SCSS SYNTAX
-nav {
-  div {
-      font-size: 103px;
-  }
+@import "../node_modules/bootstrap/scss/bootstrap";
+// TEST CSS
+div {
+  font-size: 2em;
 }
