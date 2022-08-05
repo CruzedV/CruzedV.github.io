@@ -10758,8 +10758,22 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-div {
-  font-size: 2em;
+body {
+  background-color: #485569;
+}
+
+circle {
+  float: right;
+  width: 100%;
+  height: 100%;
+  shape-outside: circle(100%);
+  clip-path: circle(50% at right center);
+  background: white;
+}
+circle img {
+  height: 100%;
+  width: 100%;
+  padding-left: 50%;
 }
 
 /*# sourceMappingURL=index.css.map */

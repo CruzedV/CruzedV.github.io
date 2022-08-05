@@ -1,5 +1,43 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
-// TEST CSS
-div {
-  font-size: 2em;
-}
+// COLORS
+$primary: #485569;
+$secondary: #488ad7;
+$success: #48b169;
+$info: #dbb169;
+$warning: #db524d;
+$danger: #ff524d;
+
+// STATIC
+$filepath: "../static/MyPicture.jpg";
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $secondary,
+  "dark":       $primary,
+);
+
+body {
+  background-color: $primary;
+};
+
+// CIRCLE
+$circle-width: 100%;
+$circle-height: 100%;
+circle {
+  float: right;
+  width: $circle-width;
+  height: $circle-height;
+  shape-outside: circle(100%);
+  clip-path: circle(50% at right center);
+  background: white;
+  img {
+    height: $circle-height;
+    width: $circle-width;
+    padding-left: calc($circle-width/2);
+  }
+};
