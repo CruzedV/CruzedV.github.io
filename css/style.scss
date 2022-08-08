@@ -1,7 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 // COLORS
-$primary: #485569;
-$secondary: #488ad7;
+$primary: #546970;
+$secondary: #ffffff;
 $success: #48b169;
 $info: #dbb169;
 $warning: #db524d;
@@ -10,6 +10,8 @@ $danger: #ff524d;
 // STATIC
 $filepath: "../static/MyPicture.jpg";
 
+// VALUES
+$circle-size: 60em;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
@@ -21,23 +23,35 @@ $theme-colors: (
   "dark":       $primary,
 );
 
+// EXTENDABLE CLASSES
+%circle {
+  height: $circle-size;
+  width: $circle-size/1.4;
+  border-bottom-left-radius: $circle-size * 2;
+  border-top-left-radius: $circle-size * 2;
+};
+
+// CODE
 body {
   background-color: $primary;
 };
 
 // CIRCLE
-$circle-width: 100%;
-$circle-height: 100%;
-circle {
+circle-frame {
+  @extend %circle;
   float: right;
-  width: $circle-width;
-  height: $circle-height;
-  shape-outside: circle(100%);
-  clip-path: circle(50% at right center);
-  background: white;
+  background: $secondary;
+
   img {
-    height: $circle-height;
-    width: $circle-width;
-    padding-left: calc($circle-width/2);
-  }
+    @extend %circle;
+  };
+};
+
+//NAVBAR
+nav {
+  background-color: $secondary;
+  max-height: 7%;
+  img {
+    max-height: 2em;
+  };
 };

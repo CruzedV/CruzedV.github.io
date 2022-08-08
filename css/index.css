@@ -10758,22 +10758,27 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  background-color: #485569;
+circle-frame img, circle-frame {
+  height: 60em;
+  width: 42.8571428571em;
+  border-bottom-left-radius: 120em;
+  border-top-left-radius: 120em;
 }
 
-circle {
-  float: right;
-  width: 100%;
-  height: 100%;
-  shape-outside: circle(100%);
-  clip-path: circle(50% at right center);
-  background: white;
+body {
+  background-color: #546970;
 }
-circle img {
-  height: 100%;
-  width: 100%;
-  padding-left: 50%;
+
+circle-frame {
+  float: right;
+  background: #ffffff;
+}
+nav {
+  background-color: #ffffff;
+  max-height: 7%;
+}
+nav img {
+  max-height: 2em;
 }
 
 /*# sourceMappingURL=index.css.map */
