@@ -10763,6 +10763,7 @@ circle-frame img, circle-frame {
   width: 42.8571428571em;
   border-bottom-left-radius: 120em;
   border-top-left-radius: 120em;
+  float: right;
 }
 
 body {
@@ -10770,7 +10771,7 @@ body {
 }
 
 circle-frame {
-  float: right;
+  width: 40em;
   background: #ffffff;
 }
 nav {

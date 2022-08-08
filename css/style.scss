@@ -29,6 +29,7 @@ $theme-colors: (
   width: $circle-size/1.4;
   border-bottom-left-radius: $circle-size * 2;
   border-top-left-radius: $circle-size * 2;
+  float: right;
 };
 
 // CODE
@@ -39,9 +40,8 @@ body {
 // CIRCLE
 circle-frame {
   @extend %circle;
-  float: right;
+  width:$circle-size/1.5;
   background: $secondary;
-
   img {
     @extend %circle;
   };
