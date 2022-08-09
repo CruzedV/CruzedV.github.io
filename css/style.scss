@@ -51,7 +51,16 @@ circle-frame {
 nav {
   background-color: $secondary;
   max-height: 7%;
-  img {
-    max-height: 2em;
+  div {
+    ul {
+      li {
+        display: block;
+        a {
+          img {
+            max-height: 2.5em;
+          };
+        };
+      };
+    };
   };
 };

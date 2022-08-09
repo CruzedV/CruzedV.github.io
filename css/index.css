@@ -10778,8 +10778,11 @@ nav {
   background-color: #ffffff;
   max-height: 7%;
 }
-nav img {
-  max-height: 2em;
+nav div ul li {
+  display: block;
+}
+nav div ul li a img {
+  max-height: 2.5em;
 }
 
 /*# sourceMappingURL=index.css.map */
