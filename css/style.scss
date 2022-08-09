@@ -48,15 +48,17 @@ circle-frame {
 };
 
 //NAVBAR
-$nav-size: 25vw;
+$nav-size: 8vh;
 nav {
+  float: left;
+  margin-top: calc(50vh - $nav-size);
   width: $nav-size;
   background-color: $secondary;
   border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
   div {
     ul {
       li {
-        display: block;
         a {
           img {
             margin-top: 0.5em;

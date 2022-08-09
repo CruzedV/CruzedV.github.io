@@ -10775,12 +10775,12 @@ circle-frame {
   background: #ffffff;
 }
 nav {
-  width: 25vw;
+  float: left;
+  margin-top: 42vh;
+  width: 8vh;
   background-color: #ffffff;
   border-top-right-radius: 20%;
-}
-nav div ul li {
-  display: block;
+  border-bottom-right-radius: 20%;
 }
 nav div ul li a img {
   margin-top: 0.5em;
