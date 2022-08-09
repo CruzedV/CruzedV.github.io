@@ -10776,8 +10776,8 @@ circle-frame {
 }
 nav {
   width: 25vw;
-  border-top-right-radius: 20%;
   background-color: #ffffff;
+  border-top-right-radius: 20%;
 }
 nav div ul li {
   display: block;
