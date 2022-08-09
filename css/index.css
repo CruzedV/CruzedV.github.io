@@ -10759,10 +10759,10 @@ textarea.form-control-lg {
   }
 }
 circle-frame img, circle-frame {
-  height: 60em;
-  width: 42.8571428571em;
-  border-bottom-left-radius: 120em;
-  border-top-left-radius: 120em;
+  height: 100vh;
+  width: 71.4285714286vh;
+  border-bottom-left-radius: 200vh;
+  border-top-left-radius: 200vh;
   float: right;
 }
 
@@ -10771,18 +10771,21 @@ body {
 }
 
 circle-frame {
-  width: 40em;
+  width: 66.6666666667vh;
   background: #ffffff;
 }
 nav {
+  width: 25vw;
+  border-top-right-radius: 20%;
   background-color: #ffffff;
-  max-height: 7%;
 }
 nav div ul li {
   display: block;
 }
 nav div ul li a img {
-  max-height: 2.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  max-height: 2em;
 }
 
 /*# sourceMappingURL=index.css.map */

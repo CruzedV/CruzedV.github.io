@@ -11,7 +11,7 @@ $danger: #ff524d;
 $filepath: "../static/MyPicture.jpg";
 
 // VALUES
-$circle-size: 60em;
+$circle-size: 100vh;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
@@ -48,16 +48,20 @@ circle-frame {
 };
 
 //NAVBAR
+$nav-size: 25vw;
 nav {
+  width: $nav-size;
+  border-top-right-radius: 20%;
   background-color: $secondary;
-  max-height: 7%;
   div {
     ul {
       li {
         display: block;
         a {
           img {
-            max-height: 2.5em;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            max-height: 2em;
           };
         };
       };
