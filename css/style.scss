@@ -48,21 +48,23 @@ circle-frame {
 };
 
 //NAVBAR
-$nav-size: 8vh;
+$nav-size: 7em;
 nav {
   float: left;
   margin-top: calc(50vh - $nav-size);
-  width: $nav-size;
+  width: $nav-size / 1.2;
+  height: $nav-size*3;
   background-color: $secondary;
-  border-top-right-radius: 20%;
-  border-bottom-right-radius: 20%;
+  border-top-right-radius: $nav-size*2;
+  border-bottom-right-radius: $nav-size*2;
   div {
     ul {
+      margin-top: $nav-size/2.2;
+      margin-bottom: auto;
       li {
         a {
           img {
-            margin-top: 0.5em;
-            margin-bottom: 0.5em;
+
             max-height: 2em;
           };
         };
