@@ -10775,16 +10775,19 @@ circle-frame {
   background: #ffffff;
 }
 nav {
-  width: 25vw;
+  float: left;
+  margin-top: calc(50vh - 7em);
+  width: 5.8333333333em;
+  height: 21em;
   background-color: #ffffff;
-  border-top-right-radius: 20%;
+  border-top-right-radius: 14em;
+  border-bottom-right-radius: 14em;
 }
-nav div ul li {
-  display: block;
+nav div ul {
+  margin-top: 3.1818181818em;
+  margin-bottom: auto;
 }
 nav div ul li a img {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
   max-height: 2em;
 }
 
