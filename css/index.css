@@ -10776,23 +10776,28 @@ circle-frame {
 }
 nav {
   float: left;
-  margin-top: 39vh;
-  width: 8.4615384615vh;
-  height: 33vh;
+  margin-top: calc(50vh - 7em);
+  height: 21em;
   background-color: #ffffff;
-  border-top-right-radius: 22vh;
-  border-bottom-right-radius: 22vh;
+  border-top-right-radius: 14em;
+  border-bottom-right-radius: 14em;
 }
 nav div ul {
-  margin-top: 5vh;
+  margin-top: 3.1818181818em;
 }
 nav div ul li a img {
-  max-width: 3vh;
+  width: 2em;
 }
 
-div .container-fluid, div .container-sm, div .container-md, div .container-lg, div .container-xl, div .container-xxl {
+card .container-fluid, card .container-sm, card .container-md, card .container-lg, card .container-xl, card .container-xxl {
   max-width: 80vw;
   margin-left: 15vh;
+}
+card div .card {
+  background-color: #546970;
+}
+card div h5 .card-header, card div .h5 .card-header {
+  max-width: 4vw;
 }
 
 /*# sourceMappingURL=index.css.map */
