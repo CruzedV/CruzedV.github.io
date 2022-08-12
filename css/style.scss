@@ -1,4 +1,6 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 // COLORS
 $primary: #546970;
 $secondary: #ffffff;
@@ -73,23 +75,24 @@ nav {
 // ABOUT MYSELF
 $card-size: 40vw;
 card {
-  .container-fluid {
-    max-width: $card-size*2;
-    margin-left: 15vh;
-  };
+  max-width: $card-size*2;
+  margin-left: 15vh;
   div{
     .card{
       background-color: $primary;
-    }
-    h5 {
-      .card-header {
-        max-width: calc($card-size/10);
+      div {
+        .card-header {
+          width: calc($card-size/10);
+        };
       };
-    };
-    div {
-      p {
+      div {
+        .card-body {
+          p {
+            // CSS FOR CARD TEXT
 
+          };
+        };
       };
-    };
+    }
   };
 };
