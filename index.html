@@ -12,6 +12,7 @@
       <circle-frame>
         <img src="static/MyPicture.jpg">
       </circle-frame>
+<!-- NAV -->
       <nav class="nav">
         <div class="container-sm">
           <ul class="nav flex-column nav-justified">
@@ -48,18 +49,56 @@
           </ul>
         </div>
       </nav>
+<!-- /NAV -->
+<!-- CARD COLUMNS -->
       <div class="card-column">
+        <!-- ABOUT ME -->
         <card class="container-fluid">
           <div class="card">
             <div class="card-header">
-              Featured
+              About Me
             </div>
             <div class="card-body">
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">
+                <script>
+                  let now = new Date()
+                  let now_ymd = new Date(now.getFullYear())
+                  let birthdate = new Date(2002, 8, 18) 
+                  let birthdate_ymd = new Date(birthdate.getFullYear())
+                  let age = now_ymd - birthdate_ymd
+                  if (Date(now_ymd.getMonth(), now_ymd.getDay()) < Date(birthdate_ymd.getMonth(), birthdate_ymd.getDay())) {
+                    age--
+                  }
+                  document.write(`I'm currently ${age} year old`)
+                </script>
+              </p>
+            </div>
+          </div>
+        </card>
+        <!-- AS PROGRAMMER -->
+        <card class="container-fluid">
+          <div class="card">
+            <div class="card-header">
+              I'm as programmer
+            </div>
+            <div class="card-body">
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </card>
+        <!-- AS ARTIST -->
+        <card class="container-fluid">
+          <div class="card">
+            <div class="card-header">
+              I'm as artist
+            </div>
+            <div class="card-body">
+              <p class="card-text"></p>
             </div>
           </div>
         </card>
       </div> 
+<!-- /  CARD COLUMNS -->
     </div>
   </body>
 </html>

@@ -1,6 +1,10 @@
 {
+  "scripts": {
+    "watch": "sass --watch style.scss index.css",
+    "start": "start index.html"
+  },
   "dependencies": {
     "bootstrap": "^5.2.0",
-    "sass": "^1.54.0"
+    "sass": "^1.54.8"
   }
 }
