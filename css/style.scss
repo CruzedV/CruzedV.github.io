@@ -47,7 +47,7 @@ $circle-size: 100vh;
 // CODE
 body {
   background-color: $primary;
-  font-size: calcFluidFontSize(1, 2 , 30 , 160, rem);
+  font-size: calcFluidFontSize(0.9, 1.8, 30, 160, rem);
 }
 
 // CIRCLE
@@ -65,7 +65,7 @@ $nav-size: 5em;
 nav { 
   float: left;
   margin-top: calc(50vh - $nav-size);
-  margin-right: 4em;
+  margin-right: 3em;
   // width: calc($nav-size / 1.3);
   height: $nav-size*3;
   background-color: $secondary;
@@ -73,7 +73,8 @@ nav {
   border-bottom-right-radius: $nav-size*2;
   div {
     ul {
-      margin-top: calc($nav-size/3.3);
+      margin-top: 50%;
+      margin-bottom: 50%;
       li {
         a {
           img {
@@ -86,30 +87,20 @@ nav {
 };
 
 // ABOUT MYSELF
-$card-size: 40vw;
-div {
-  .card-column {
-    card {
-      max-width: $card-size*2;
-      margin-left: 10vh;
-      div {
-        .card{
-          background-color: $primary;
-          div {
-            .card-header {
-              width: calc($card-size/10);
-            };
-          };
-          div {
-            .card-body {
-              background-color: $warning;
-              p {
-                // CSS FOR CARD TEXT
-              };
-            };
-          };
-        }
+$card-size: 20vw;
+div.card-column {
+  card.container {
+    max-width: $card-size;
+    div.card {
+      background-color: $secondary;
+      div.card-header {
+          width: calc($card-size/2);
+        };
+      };
+      div.card-body {
+        p {
+          color: red;
+        };
       };
     };
   };
-};

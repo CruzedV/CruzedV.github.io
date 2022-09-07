@@ -8,7 +8,7 @@ circle-frame img, circle-frame {
 
 body {
   background-color: #546970;
-  font-size: calc( 0.0076923077 * 100vw + 0.7692307692rem );
+  font-size: calc( 0.0069230769 * 100vw + 0.6923076923rem );
 }
 
 circle-frame {
@@ -18,31 +18,31 @@ circle-frame {
 nav {
   float: left;
   margin-top: calc(50vh - 5em);
-  margin-right: 4em;
+  margin-right: 3em;
   height: 15em;
   background-color: #ffffff;
   border-top-right-radius: 10em;
   border-bottom-right-radius: 10em;
 }
 nav div ul {
-  margin-top: 1.5151515152em;
+  margin-top: 50%;
+  margin-bottom: 50%;
 }
 nav div ul li a img {
   width: 1.7em;
 }
 
-div .card-column card {
-  max-width: 80vw;
-  margin-left: 10vh;
+div.card-column card.container {
+  max-width: 20vw;
 }
-div .card-column card div .card {
-  background-color: #546970;
+div.card-column card.container div.card {
+  background-color: #ffffff;
 }
-div .card-column card div .card div .card-header {
-  width: 4vw;
+div.card-column card.container div.card div.card-header {
+  width: 10vw;
 }
-div .card-column card div .card div .card-body {
-  background-color: #db524d;
+div.card-column card.container div.card-body p {
+  color: red;
 }
 
 /*# sourceMappingURL=index.css.map */
