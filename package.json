@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "watch": "sass --watch style.scss index.css",
+    "watch": "cd css && sass --watch style.scss index.css",
     "start": "start index.html"
   },
   "dependencies": {

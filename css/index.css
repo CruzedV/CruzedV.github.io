@@ -17,32 +17,37 @@ circle-frame {
 }
 nav {
   float: left;
-  margin-top: calc(50vh - 5em);
+  margin-top: 5em;
   margin-right: 3em;
   height: 15em;
   background-color: #ffffff;
-  border-top-right-radius: 10em;
-  border-bottom-right-radius: 10em;
+  border-top-right-radius: 15em;
+  border-bottom-right-radius: 15em;
 }
 nav div ul {
-  margin-top: 50%;
-  margin-bottom: 50%;
+  margin-top: 40%;
 }
 nav div ul li a img {
   width: 1.7em;
 }
 
-div.card-column card.container {
-  max-width: 20vw;
+div.card-column card.container-sm {
+  width: 15vw;
 }
-div.card-column card.container div.card {
+div.card-column card.container-sm div.card {
+  justify-content: center;
   background-color: #ffffff;
+  border-radius: 4em;
 }
-div.card-column card.container div.card div.card-header {
-  width: 10vw;
+div.card-column card.container-sm div.card h5.card-header {
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  text-align: center;
+  color: #374449;
 }
-div.card-column card.container div.card-body p {
-  color: red;
+div.card-column card.container-sm div.card-body {
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 /*# sourceMappingURL=index.css.map */
