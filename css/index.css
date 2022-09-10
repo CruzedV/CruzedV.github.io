@@ -1,4 +1,13 @@
+@font-face {
+  font-family: "Tittilium";
+  src: url(fonts/TitilliumWeb-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Exo";
+  src: url(fonts/Exo-Regular.ttf) format("truetype");
+}
 circle-frame img, circle-frame {
+  margin-left: 2.5em;
   height: 100vh;
   width: 71.4285714286vh;
   border-bottom-left-radius: 200vh;
@@ -7,6 +16,7 @@ circle-frame img, circle-frame {
 }
 
 body {
+  font-family: "CustomFont", "Exo-Regular";
   background-color: #546970;
   font-size: calc( 0.0069230769 * 100vw + 0.6923076923rem );
 }
@@ -40,14 +50,16 @@ div.card-column card.container-sm div.card {
   border-radius: 4em;
 }
 div.card-column card.container-sm div.card h5.card-header {
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
+  margin-left: 3em;
+  margin-right: 3em;
+  border-bottom-left-radius: 4em;
+  border-bottom-right-radius: 4em;
   text-align: center;
   color: #374449;
 }
 div.card-column card.container-sm div.card-body {
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 /*# sourceMappingURL=index.css.map */

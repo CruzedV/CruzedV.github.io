@@ -10,9 +10,17 @@ $warning: #db524d;
 $danger: #ff524d;
 $light: #6e8891;
 $dark: #374449;
-
+// USING Exo-Black, TitilliumWeb-Black
 // STATIC
 $filepath: "../static/MyPicture.jpg";
+@font-face {
+  font-family: 'Tittilium';
+  src: url(fonts/TitilliumWeb-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Exo";
+  src: url(fonts/Exo-Regular.ttf) format('truetype');
+}
 
 // VALUES
 $theme-colors: (
@@ -29,12 +37,14 @@ $theme-colors: (
 // EXTENDABLE CLASSES
 $circle-size: 100vh;
 %circle {
+  margin-left: 2.5em;
   height: $circle-size;
   width: calc($circle-size/1.4);
   border-bottom-left-radius: $circle-size * 2;
   border-top-left-radius: $circle-size * 2;
   float: right;
 };
+
 
 // FUNCTIONS
 @function calcFluidFontSize($f-min, $f-max, $v-min, $v-max, $units: px) {
@@ -48,6 +58,7 @@ $circle-size: 100vh;
 
 // CODE
 body {
+  font-family: 'CustomFont', 'Exo-Regular';
   background-color: $primary;
   font-size: calcFluidFontSize(0.9, 1.8, 30, 160, rem);
 }
@@ -96,15 +107,17 @@ div.card-column {
       background-color: $secondary;
       border-radius: 4em;
       h5.card-header {
-        border-top-left-radius: 2em;
-        border-top-right-radius: 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+        border-bottom-left-radius: 4em;
+        border-bottom-right-radius: 4em;
         text-align: center;
         color: $dark; 
         };
       };
       div.card-body {
-        margin-left: 2em;
-        margin-right: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
         p {
         };
       };
