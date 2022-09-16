@@ -2,14 +2,47 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 // COLORS
-$primary: #546970;
-$secondary: #ffffff;
+// DEFAULTPALLETE
+// $primary: #546970;
+// $secondary: #ffffff;
+// $success: #48b169;
+// $info: #dbb169;
+// $warning: #db524d;
+// $danger: #ff524d;
+// $light: #6e8891;
+// $dark: #374449;'
+
+// BROWNPALLETE
+$primary: #FBFBFB;
+$secondary: #2D2E2E;
 $success: #48b169;
 $info: #dbb169;
 $warning: #db524d;
 $danger: #ff524d;
-$light: #6e8891;
-$dark: #374449;
+$light: #5F5858;
+$dark: #333333;
+
+// GREENPALLETE
+// $primary: #ECF39E;
+// $secondary: #4F772D;
+// $success: #48b169;
+// $info: #dbb169;
+// $warning: #db524d;
+// $danger: #ff524d;
+// $light: #90A955;
+// $dark: #31572C;
+
+// SPORTEVEPALLETE
+// $primary: #EDF2F4;
+// $secondary: #EF233C;
+// $success: #48b169;
+// $info: #dbb169;
+// $warning: #db524d;
+// $danger: #ff524d;
+// $light: # B7BFCC;
+// $dark: #2B2D42;
+
+
 // USING Exo-Black, TitilliumWeb-Black
 // STATIC
 $filepath: "../static/MyPicture.jpg";
@@ -32,6 +65,17 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
+) !default;
+
+$alter-colors: (
+  "primary":    #FBFBFB,
+  "secondary":  #2D2E2E,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      #716969,
+  "dark":       #0F0F0F,
 ) !default;
 
 // EXTENDABLE CLASSES
@@ -58,8 +102,8 @@ $circle-size: 100vh;
 
 // CODE
 body {
-  font-family: 'CustomFont', 'Exo-Regular';
-  background-color: $primary;
+  font-family: 'Tittilium', 'TittiliumWeb-Refular';
+  background-color: $dark;
   font-size: calcFluidFontSize(0.9, 1.8, 30, 160, rem);
 }
 
@@ -67,7 +111,7 @@ body {
 circle-frame {
   @extend %circle;
   width: calc($circle-size/1.5);
-  background: $secondary;
+  background-color: $light;
   img {
     @extend %circle;
   };
@@ -80,7 +124,7 @@ nav {
   margin-top: calc($nav-size/3);
   margin-right: 3em;
   height: $nav-size;
-  background-color: $secondary;
+  background-color: $primary;
   border-top-right-radius: $nav-size;
   border-bottom-right-radius: $nav-size;
   div {
@@ -104,21 +148,25 @@ div.card-column {
     width: $card-size;
     div.card {
       justify-content: center;
-      background-color: $secondary;
+      background-color: $light;
       border-radius: 4em;
       h5.card-header {
+        font-size: 1.2em;
         margin-left: 3em;
         margin-right: 3em;
         border-bottom-left-radius: 4em;
         border-bottom-right-radius: 4em;
         text-align: center;
-        color: $dark; 
+        color: $primary;
+        background-color: $secondary;
         };
       };
       div.card-body {
         margin-left: 1em;
         margin-right: 1em;
         p {
+          color: darken($primary, 10%);
+          font-size: 0.95;
         };
       };
     };

@@ -16,21 +16,21 @@ circle-frame img, circle-frame {
 }
 
 body {
-  font-family: "CustomFont", "Exo-Regular";
-  background-color: #546970;
+  font-family: "Tittilium", "TittiliumWeb-Refular";
+  background-color: #333333;
   font-size: calc( 0.0069230769 * 100vw + 0.6923076923rem );
 }
 
 circle-frame {
   width: 66.6666666667vh;
-  background: #ffffff;
+  background-color: #5F5858;
 }
 nav {
   float: left;
   margin-top: 5em;
   margin-right: 3em;
   height: 15em;
-  background-color: #ffffff;
+  background-color: #FBFBFB;
   border-top-right-radius: 15em;
   border-bottom-right-radius: 15em;
 }
@@ -46,20 +46,26 @@ div.card-column card.container-sm {
 }
 div.card-column card.container-sm div.card {
   justify-content: center;
-  background-color: #ffffff;
+  background-color: #5F5858;
   border-radius: 4em;
 }
 div.card-column card.container-sm div.card h5.card-header {
+  font-size: 1.2em;
   margin-left: 3em;
   margin-right: 3em;
   border-bottom-left-radius: 4em;
   border-bottom-right-radius: 4em;
   text-align: center;
-  color: #374449;
+  color: #FBFBFB;
+  background-color: #2D2E2E;
 }
 div.card-column card.container-sm div.card-body {
   margin-left: 1em;
   margin-right: 1em;
+}
+div.card-column card.container-sm div.card-body p {
+  color: #e2e2e2;
+  font-size: 0.95;
 }
 
 /*# sourceMappingURL=index.css.map */
