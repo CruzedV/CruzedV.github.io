@@ -31,7 +31,6 @@ $dark: #333333;
 // $danger: #ff524d;
 // $light: #90A955;
 // $dark: #31572C;
-
 // SPORTEVEPALLETE
 // $primary: #EDF2F4;
 // $secondary: #EF233C;
@@ -118,22 +117,28 @@ circle-frame {
 };
 
 //NAVBAR
-$nav-size: 15em;
+$nav-size: 4em;
 nav { 
   float: left;
   margin-top: calc($nav-size/3);
   margin-right: 3em;
-  height: $nav-size;
-  background-color: $primary;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  background-color: $light;
   border-top-right-radius: $nav-size;
   border-bottom-right-radius: $nav-size;
-  div {
+  div.container-sm {
+    padding-left: 0;
     ul {
-      margin-top: 40%;
+      background-color: $primary;
+      border-top-right-radius: $nav-size;
+      border-bottom-right-radius: $nav-size;
+      padding-top: 1em;
+      padding-bottom: 1em;
       li {
         a {
           img {
-            width: 1.7em;
+            max-width: 1.7em;
           };
         };
       };

@@ -27,18 +27,26 @@ circle-frame {
 }
 nav {
   float: left;
-  margin-top: 5em;
+  margin-top: 1.3333333333em;
   margin-right: 3em;
-  height: 15em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  background-color: #5F5858;
+  border-top-right-radius: 4em;
+  border-bottom-right-radius: 4em;
+}
+nav div.container-sm {
+  padding-left: 0;
+}
+nav div.container-sm ul {
   background-color: #FBFBFB;
-  border-top-right-radius: 15em;
-  border-bottom-right-radius: 15em;
+  border-top-right-radius: 4em;
+  border-bottom-right-radius: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
-nav div ul {
-  margin-top: 40%;
-}
-nav div ul li a img {
-  width: 1.7em;
+nav div.container-sm ul li a img {
+  max-width: 1.7em;
 }
 
 div.card-column card.container-sm {
